@@ -278,6 +278,8 @@ particlesJS("particles-js", {
       "retina_detect": true
   });
 
+  
+
   //////////////
 var onHover = document.querySelectorAll(".onhover");
 onHover.forEach(hover => {
