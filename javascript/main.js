@@ -105,10 +105,10 @@
 })(jQuery);
 
 var swiper = new Swiper(".portfolioSlider", {
-    // autoplay: {
-    //      delay: 2500,
-    //      disableOnInteraction: false,
-    //    },
+     autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -140,10 +140,10 @@ var swiper = new Swiper(".portfolioSlider", {
 
   var swiper = new Swiper(".logo-slider", {
     loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         640: {
           slidesPerView: 1,
