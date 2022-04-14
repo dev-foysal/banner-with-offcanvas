@@ -105,10 +105,10 @@
 })(jQuery);
 
 var swiper = new Swiper(".portfolioSlider", {
-    autoplay: {
-         delay: 2500,
-         disableOnInteraction: false,
-       },
+    // autoplay: {
+    //      delay: 2500,
+    //      disableOnInteraction: false,
+    //    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -120,22 +120,43 @@ var swiper = new Swiper(".portfolioSlider", {
   });
 
   var testimonialSlider = new Swiper(".testimonial-slider", {
-    slidesPerView: 2,
     spaceBetween: 30,
     freeMode: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      }
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+      },
   });
 
   var swiper = new Swiper(".logo-slider", {
-    slidesPerView: 6,
     loop: true,
-    spaceBetween: 30,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        991: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
       },
   });
 
